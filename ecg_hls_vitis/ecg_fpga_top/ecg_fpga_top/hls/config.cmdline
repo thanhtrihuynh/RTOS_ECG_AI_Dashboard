@@ -1,0 +1,3 @@
+relativeroot=T:/SoC/Project/RTOS/ecg_hls_vitis_clean_project_v6/ecg_fpga_top
+original_argv=--mode hls --package --config T:\SoC\Project\RTOS\ecg_hls_vitis_clean_project_v6\ecg_fpga_top\hls_config.cfg --work_dir ecg_fpga_top 
+

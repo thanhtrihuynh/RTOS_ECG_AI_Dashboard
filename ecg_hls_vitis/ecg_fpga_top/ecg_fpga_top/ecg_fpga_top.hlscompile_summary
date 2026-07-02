@@ -1,0 +1,246 @@
+<ENTRY>
+{
+ "thisFile": "T:/SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top\\ecg_fpga_top\\ecg_fpga_top.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "07/02/26 16:38:39",
+ "timestampMillis": "1782985119592",
+ "buildStep": {
+  "cmdId": "1f9ec55a-635a-4814-a36d-258e1b02684e",
+  "name": "v++",
+  "logFile": "T:/SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top\\ecg_fpga_top\\logs\\ecg_fpga_top.steps.log",
+  "commandLine": "T:/SoC/2025.2/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config T:\\SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top\\hls_config.cfg --work_dir ecg_fpga_top ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "T:\\SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top\\hls_config.cfg",
+   "--work_dir",
+   "ecg_fpga_top"
+  ],
+  "iniFiles": [
+   {
+    "path": "T:/SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top\\hls_config.cfg",
+    "content": "part=xc7z020clg400-1\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=ecg_fpga_top\nsyn.file=../src/ecg_fpga_top.cpp\nsyn.file=../src/ecg_hls_layers.cpp\ntb.file=../src/tb_ecg_fpga_top.cpp\nclock=10ns"
+   }
+  ],
+  "cwd": "T:\\SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/02/26 16:38:39",
+ "timestampMillis": "1782985119592",
+ "status": {
+  "cmdId": "1f9ec55a-635a-4814-a36d-258e1b02684e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "07/02/26 16:38:45",
+ "timestampMillis": "1782985125476",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "ecg_fpga_top",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "T:/SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\src\\ecg_fpga_top.cpp",
+     "T:/SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\src\\ecg_hls_layers.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "07/02/26 16:38:45",
+ "timestampMillis": "1782985125477",
+ "buildStep": {
+  "cmdId": "6c9b4f2b-695e-44aa-8f85-819e55da1cf2",
+  "name": "",
+  "logFile": "T:/SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top\\ecg_fpga_top\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "T:\\SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/02/26 16:38:45",
+ "timestampMillis": "1782985125477",
+ "status": {
+  "cmdId": "6c9b4f2b-695e-44aa-8f85-819e55da1cf2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/02/26 16:38:45",
+ "timestampMillis": "1782985125478",
+ "report": {
+  "path": "T:/SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top\\ecg_fpga_top\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/02/26 16:38:45",
+ "timestampMillis": "1782985125478",
+ "report": {
+  "path": "T:/SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top\\ecg_fpga_top\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/02/26 16:38:45",
+ "timestampMillis": "1782985125478",
+ "report": {
+  "path": "T:/SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top\\ecg_fpga_top\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/02/26 16:39:40",
+ "timestampMillis": "1782985180941",
+ "report": {
+  "path": "T:/SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top\\ecg_fpga_top\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/02/26 16:39:40",
+ "timestampMillis": "1782985180942",
+ "report": {
+  "path": "T:/SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top\\ecg_fpga_top\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/02/26 16:39:40",
+ "timestampMillis": "1782985180942",
+ "report": {
+  "path": "T:/SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top\\ecg_fpga_top\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/02/26 16:39:40",
+ "timestampMillis": "1782985180942",
+ "status": {
+  "cmdId": "6c9b4f2b-695e-44aa-8f85-819e55da1cf2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/02/26 16:39:41",
+ "timestampMillis": "1782985181192",
+ "status": {
+  "cmdId": "1f9ec55a-635a-4814-a36d-258e1b02684e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/02/26 16:39:41",
+ "timestampMillis": "1782985181258",
+ "report": {
+  "path": "T:/SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top\\ecg_fpga_top\\reports\\v++_compile_ecg_fpga_top_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/02/26 16:39:41",
+ "timestampMillis": "1782985181259",
+ "report": {
+  "path": "T:/SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top\\ecg_fpga_top\\reports\\.db\\v++_compile_ecg_fpga_top_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

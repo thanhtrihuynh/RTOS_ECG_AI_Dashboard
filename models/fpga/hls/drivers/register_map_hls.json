@@ -1,0 +1,97 @@
+{
+  "overlay_kind": "HLS",
+  "board": "PYNQ-Z2",
+  "ip_instance": "ecg_fpga_top_0",
+  "function": "ecg_fpga_top",
+  "input_length": 320,
+  "data_format": "Q4.12 int16",
+  "labels": [
+    "N",
+    "L",
+    "R",
+    "V",
+    "A"
+  ],
+  "control": {
+    "CTRL": "0x00",
+    "AP_START_bit": 0,
+    "AP_DONE_bit": 1,
+    "AP_IDLE_bit": 2,
+    "AP_READY_bit": 3
+  },
+  "arguments": {
+    "beat_in_q12_pointer_low": "0x10",
+    "beat_in_q12_pointer_high": "0x14",
+    "pred_class_pointer_low": "0x1c",
+    "pred_class_pointer_high": "0x20",
+    "score5_q12_pointer_low": "0x28",
+    "score5_q12_pointer_high": "0x2c"
+  },
+  "parsed_hwh": {
+    "instance": "ecg_fpga_top_0",
+    "module": "ecg_fpga_top",
+    "vlnv": "xilinx.com:hls:ecg_fpga_top:1.0",
+    "registers": {
+      "CTRL": {
+        "offset_dec": 0,
+        "offset_hex": "0x0",
+        "access": "read-write",
+        "description": "Control signals"
+      },
+      "GIER": {
+        "offset_dec": 4,
+        "offset_hex": "0x4",
+        "access": "read-write",
+        "description": "Global Interrupt Enable Register"
+      },
+      "IP_IER": {
+        "offset_dec": 8,
+        "offset_hex": "0x8",
+        "access": "read-write",
+        "description": "IP Interrupt Enable Register"
+      },
+      "IP_ISR": {
+        "offset_dec": 12,
+        "offset_hex": "0xc",
+        "access": "read-write",
+        "description": "IP Interrupt Status Register"
+      },
+      "beat_in_q12_1": {
+        "offset_dec": 16,
+        "offset_hex": "0x10",
+        "access": "write-only",
+        "description": "Data signal of beat_in_q12"
+      },
+      "beat_in_q12_2": {
+        "offset_dec": 20,
+        "offset_hex": "0x14",
+        "access": "write-only",
+        "description": "Data signal of beat_in_q12"
+      },
+      "pred_class_1": {
+        "offset_dec": 28,
+        "offset_hex": "0x1c",
+        "access": "write-only",
+        "description": "Data signal of pred_class"
+      },
+      "pred_class_2": {
+        "offset_dec": 32,
+        "offset_hex": "0x20",
+        "access": "write-only",
+        "description": "Data signal of pred_class"
+      },
+      "score5_q12_1": {
+        "offset_dec": 40,
+        "offset_hex": "0x28",
+        "access": "write-only",
+        "description": "Data signal of score5_q12"
+      },
+      "score5_q12_2": {
+        "offset_dec": 44,
+        "offset_hex": "0x2c",
+        "access": "write-only",
+        "description": "Data signal of score5_q12"
+      }
+    }
+  }
+}

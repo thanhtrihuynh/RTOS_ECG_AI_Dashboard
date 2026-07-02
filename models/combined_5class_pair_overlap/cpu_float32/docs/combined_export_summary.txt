@@ -1,0 +1,36 @@
+Combined 5-class + Pair-overlap N/A Refiner CPU Float Export
+====================================================================================================
+
+Package này dùng cho dashboard hoặc CPU inference.
+
+Bao gồm:
+- main_5class_model_CPU_FLOAT.keras
+- pair_overlap_NA_refiner_CPU_FLOAT.keras
+- pair_overlap_feature_norm_float32.npz
+- combined_inference_config.json
+
+Main model:
+- Input: ECG beat shape (320, 1)
+- Output: 5-class [N, L, R, V, A]
+
+Pair-overlap refiner:
+- Input 1: left beat (320, 1)
+- Input 2: right beat (320, 1)
+- Input 3: overlap region (160, 1)
+- Input 4: RR/overlap feature vector (15,)
+- Output left: [P_N, P_A]
+- Output right: [P_N, P_A]
+
+Combine rule:
+- Base prediction L/R/V: giữ nguyên.
+- Base prediction N/A: gọi pair-overlap refiner.
+- Refiner chỉ sửa N <-> A.
+
+Thresholds:
+PAIR_LEFT_A_THRESHOLD: 0.845
+PAIR_RIGHT_A_THRESHOLD: 0.735
+PAIR_OVERLAP_THRESHOLD_N: 0.2
+PAIR_OVERLAP_THRESHOLD_A: 0.85
+
+Lưu ý:
+Đây không phải single Keras model. Combine được thực hiện bằng code inference bên ngoài.

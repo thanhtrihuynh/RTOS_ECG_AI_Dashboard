@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECG Guided Input Dashboard - PYNQ-Z2</title>
+  <link rel="stylesheet" href="/static/styles.css?v=56" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="chip">PYNQ-Z2</div>
+        <h1>ECG AI<br/>Dashboard</h1>
+        <p>Dashboard 4 backend, bổ sung layout 2-stage: 5-class trước, N/A pair-context refine sau.</p>
+      </div>
+
+      <div class="panel">
+        <h2>Trạng thái hệ thống</h2>
+        <div id="modelStatus" class="statusLine">Model: checking...</div>
+        <div id="fpgaStatus" class="statusLine">FPGA: checking...</div>
+      </div>
+
+      <div class="panel">
+        <h2>Kiểm tra FPGA</h2>
+        <p class="hint">Kiểm tra dashboard có đang chạy trong môi trường PYNQ/Zynq và có thể load overlay FPGA hay chưa.</p>
+        <button id="checkFpgaBtn" class="secondary">Check FPGA</button>
+        <div id="fpgaProbeStatus" class="datasetInfo">Chưa kiểm tra FPGA.</div>
+      </div>
+
+      <div class="panel">
+        <h2>Model Package Manager</h2>
+        <p class="hint">Dùng để nạp package combined 5-class + pair-overlap vào đúng thư mục chạy.</p>
+        <button id="importExportBtn">Import model package</button>
+        <button id="reloadModelsBtn" class="secondary">Reload models</button>
+        <button id="refreshModelFilesBtn" class="secondary">Refresh status</button>
+        <div id="modelFileStatus" class="datasetInfo">Chưa kiểm tra file.</div>
+      </div>
+
+      <div class="panel optionalPanel">
+        <h2>RTL/Verilog Files</h2>
+        <p class="hint">Tùy chọn cho hướng FPGA RTL. Chỉ lưu file .v/.sv/.vh vào thư mục RTL để báo cáo hoặc build Vivado, không dùng cho CPU và không tự tạo bitstream.</p>
+        <input id="verilogFiles" type="file" multiple accept=".v,.sv,.vh" />
+        <button id="uploadVerilogBtn">Save RTL Files</button>
+        <div id="verilogStatus" class="datasetInfo">Chưa lưu file RTL/Verilog.</div>
+      </div>
+
+      <div class="panel">
+        <h2>Backend suy luận</h2>
+        <label class="radio"><input type="radio" name="backend" value="cpu_float32" checked /> CPU Float32</label>
+        <label class="radio"><input type="radio" name="backend" value="cpu_q4_12" /> CPU Q4.12</label>
+        <label class="radio"><input type="radio" name="backend" value="fpga_hls_q4_12" /> FPGA HLS Q4.12</label>
+        <label class="radio"><input type="radio" name="backend" value="fpga_rtl_q4_12" /> FPGA RTL Q4.12</label>
+      </div>
+
+
+      <div class="panel">
+        <h2>Sampling rate</h2>
+        <input id="fsInput" type="number" value="360" min="50" max="2000" />
+        <p class="hint">Dùng cho CSV ECG dài hoặc fallback segmentation.</p>
+      </div>
+
+      <div class="panel">
+        <h2>Chế độ nạp dữ liệu</h2>
+        <div class="modeTabs">
+          <button class="modeBtn active" data-mode="csv_table">CSV Heartbeat</button>
+          <button class="modeBtn" data-mode="csv_long">CSV Long ECG</button>
+          <button class="modeBtn" data-mode="wfdb">WFDB</button>
+                  </div>
+      </div>
+
+      <div class="panel modePanel active" id="panel-csv_table">
+        <h2>CSV - Heartbeat Table</h2>
+        <p class="hint">Chọn 1 file .csv hoặc .txt. Mỗi dòng là 1 heartbeat, cột cuối có thể là nhãn.</p>
+        <input id="csvTableFile" type="file" accept=".csv,.txt" />
+        <button id="uploadCsvTableBtn">Parse CSV Heartbeat</button>
+      </div>
+
+      <div class="panel modePanel" id="panel-csv_long">
+        <h2>CSV - Long ECG</h2>
+        <p class="hint">Chọn 1 file .csv hoặc .txt chứa một đoạn ECG dài. Hệ thống sẽ tự tìm R-peak và cắt beat.</p>
+        <input id="csvLongFile" type="file" accept=".csv,.txt" />
+        <button id="uploadCsvLongBtn">Parse Long ECG</button>
+      </div>
+
+      <div class="panel modePanel" id="panel-wfdb">
+        <h2>WFDB / MIT-BIH</h2>
+        <p class="hint">Chọn theo từng loại file để dễ thao tác. .hea và .dat là bắt buộc.</p>
+        <label class="smallLabel">.hea</label>
+        <input id="wfdbHeaFile" type="file" accept=".hea" />
+        <label class="smallLabel">.dat</label>
+        <input id="wfdbDatFile" type="file" accept=".dat" />
+        <label class="smallLabel">.atr</label>
+        <input id="wfdbAtrFile" type="file" accept=".atr" />
+        <label class="smallLabel">.xws (optional)</label>
+        <input id="wfdbXwsFile" type="file" accept=".xws" />
+        <button id="uploadWfdbBtn">Parse WFDB Record</button>
+        <button id="saveWfdbBtn" class="secondary">Parse & Save</button>
+        <p class="hint">Parse = chỉ xem/dự đoán, không lưu. Parse & Save = vừa parse vừa lưu vào Record Library.</p>
+      </div>
+
+      <div class="panel">
+        <h2>Thông tin dataset</h2>
+        <div id="datasetInfo" class="datasetInfo">Chưa upload file.</div>
+      </div>
+
+      <div class="panel">
+        <h2>Record Library</h2>
+        <p class="hint">Lưu, tìm kiếm, load lại hoặc xuất ZIP các record WFDB đã nạp.</p>
+        <input id="recordSearchInput" type="text" placeholder="Tìm record, ví dụ 100" />
+        <div class="buttonRow libraryButtons">
+          <button id="searchRecordsBtn">Search</button>
+          <button id="refreshRecordsBtn" class="secondary">Refresh</button>
+        </div>
+        <div id="recordList" class="recordList">Chưa có record đã lưu.</div>
+      </div>
+      <div class="panel">
+        <h2>Bulk Dataset</h2>
+        <p class="hint">Copy CSV metadata vào dataset_import/metadata và toàn bộ .hea/.dat/.atr/.xws vào dataset_import/wfdb_records.</p>
+        <button id="indexBulkDatasetBtn">Index Dataset Folder</button>
+        <button id="refreshBulkStatusBtn" class="secondary">Status</button>
+        <div id="bulkStatusBox" class="datasetInfo">Chưa index dataset.</div>
+        <label class="smallLabel">Tìm record</label>
+        <input id="bulkRecordSearchInput" type="text" placeholder="Ví dụ 117" />
+        <label class="smallLabel">Label</label>
+        <input id="bulkLabelSearchInput" type="text" placeholder="N / L / R / V / A" />
+        <button id="searchBulkSegmentsBtn">Search Segments</button>
+        <div id="bulkSegmentList" class="recordList">Chưa có segment.</div>
+      </div>
+
+      <div class="panel">
+        <h2>Record theo loại nhịp</h2>
+        <p class="hint">Xác định label N, L, R, V, A xuất hiện trong những record nào dựa trên Bulk Dataset Index.</p>
+        <button id="refreshLabelRecordsBtn" onclick="loadLabelRecordMap()">Refresh label map</button>
+        <div id="labelRecordMap" class="recordList">Bấm Refresh label map để đọc thống kê từ Bulk Dataset Index.</div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Dashboard phân loại heartbeat với guided input</h1>
+          <p>Chọn đúng một trong bốn mode nhập dữ liệu, nạp file theo hướng dẫn, sau đó suy luận từng beat hoặc toàn bộ dataset.</p>
+        </div>
+        <div class="serverStatus" id="serverStatus">server online</div>
+      </section>
+
+      <section id="warningBox" class="warningBox hidden"></section>
+
+      <section class="grid two">
+        <div class="card">
+          <div class="cardHeader">
+            <h2>Heartbeat hiện tại</h2>
+            <div class="buttonRow">
+              <button id="predictBeatBtn">Predict beat</button>
+              <button id="predictBeatMultiBtn" class="secondary">Predict multi-backend</button>
+            </div>
+          </div>
+
+          <div id="recordTrackingInfo" class="datasetInfo">Chưa load record.</div>
+          <div class="beatControl sliderControl">
+            <label>Beat timeline</label>
+            <input id="beatSlider" type="range" value="0" min="0" max="0" />
+            <span id="beatPositionText">0 / 0</span>
+            <div class="beatStepControls">
+              <button id="prevBeatStepBtn" class="secondary smallBtn" type="button">-</button>
+              <input id="beatStepInput" class="stepInput" type="number" value="1" min="1" max="1000" title="Số beat nhảy mỗi lần" />
+              <button id="nextBeatStepBtn" class="secondary smallBtn" type="button">+</button>
+            </div>
+          </div>
+
+          <canvas id="waveCanvas" height="230"></canvas>
+          <p class="hint" id="beatHint">Hãy chọn một mode upload ở thanh bên trái.</p>
+        </div>
+
+        <div class="card">
+          <div class="cardHeader">
+            <h2>Kết quả beat</h2>
+            <span id="trueLabelBadge" class="badge">True: unknown</span>
+          </div>
+
+          <div class="prediction">
+            <div>
+              <div class="labelBig" id="predLabel">-</div>
+              <div class="labelText" id="predName">Chưa suy luận</div>
+            </div>
+            <div class="confidence">
+              <span id="confidenceText">0.00%</span>
+              <small>confidence</small>
+            </div>
+          </div>
+
+          <div class="metrics">
+            <div><span id="latencyText">-</span><small>Latency / beat</small></div>
+            <div><span id="throughputText">-</span><small>Throughput</small></div>
+            <div><span id="backendText">-</span><small>Backend</small></div>
+          </div>
+
+          <div id="backendDetailPanel" class="backendDetailPanel">
+            <div class="detailTitle">Thông số backend đang chọn</div>
+            <div class="detailGrid">
+              <div><span>-</span><small>Chưa chọn backend.</small></div>
+            </div>
+          </div>
+
+          <canvas id="probCanvas" height="190"></canvas>
+          <p class="note" id="engineNote"></p>
+        </div>
+
+
+      </section>
+
+      <section class="card beatMultiWide beatMultiFullWidth">
+          <div class="cardHeader compactHeader">
+            <h2>So sánh nhiều backend cho beat hiện tại</h2>
+            <button id="predictBeatMultiBtnWide" class="secondary">Predict multi-backend</button>
+          </div>
+          <div class="beatBackendSelector">
+            <label><input type="checkbox" class="beatBackendCheck" value="cpu_float32" checked /> CPU Float32</label>
+            <label><input type="checkbox" class="beatBackendCheck" value="cpu_q4_12" checked /> CPU Q4.12</label>
+            <label><input type="checkbox" class="beatBackendCheck" value="fpga_hls_q4_12" /> FPGA HLS</label>
+            <label><input type="checkbox" class="beatBackendCheck" value="fpga_rtl_q4_12" /> FPGA RTL</label>
+          </div>
+          <div id="beatMultiCards" class="beatMultiCards">
+            <div class="backendRunCard empty">Bấm Predict multi-backend để xem latency từng backend.</div>
+          </div>
+      </section>
+
+      <section class="card">
+        <div class="cardHeader">
+          <h2>Predict toàn bộ dataset</h2>
+          <div class="buttonRow">
+            <input id="maxBeatsInput" type="number" placeholder="Max beats, bỏ trống = toàn bộ" />
+            <button id="predictDatasetBtn">Predict dataset</button>
+            <button id="predictMultiBackendBtn" class="secondary">Predict multi-backend</button>
+            <button id="exportCsvBtn" class="secondary" disabled>Export CSV</button>
+            <button id="exportJsonBtn" class="secondary" disabled>Export JSON</button>
+          </div>
+        </div>
+
+        <div id="predictDatasetContext" class="datasetInfo">Record/Dataset: chưa có dữ liệu.</div>
+
+        <div class="multiBackendBox">
+          <b>Chọn backend để so sánh cùng lúc:</b>
+          <label><input type="checkbox" class="multiBackendCheck" value="cpu_float32" checked /> CPU Float32</label>
+          <label><input type="checkbox" class="multiBackendCheck" value="cpu_q4_12" checked /> CPU Q4.12</label>
+          <label><input type="checkbox" class="multiBackendCheck" value="fpga_hls_q4_12" /> FPGA HLS Q4.12</label>
+          <label><input type="checkbox" class="multiBackendCheck" value="fpga_rtl_q4_12" /> FPGA RTL Q4.12</label>
+        </div>
+
+        <div class="metrics five">
+          <div><span id="totalRunText">-</span><small>Total beats</small></div>
+          <div><span id="correctCountText">-</span><small>Dự đoán đúng / có nhãn</small></div>
+          <div><span id="accuracyText">-</span><small>Accuracy nếu có nhãn</small></div>
+          <div><span id="avgLatencyText">-</span><small>Avg latency</small></div>
+          <div><span id="datasetThroughputText">-</span><small>Throughput</small></div>
+        </div>
+
+        <canvas id="countCanvas" height="210"></canvas>
+
+        <div class="tableWrap compactTable">
+          <h3>Dự đoán đúng theo từng loại nhịp</h3>
+          <table id="perClassTable">
+            <thead>
+              <tr>
+                <th>Loại</th>
+                <th>Đúng / Tổng thật</th>
+                <th>Accuracy lớp</th>
+                <th>Số lần model đoán ra</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td colspan="4">Chưa có thống kê theo lớp.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tableWrap compactTable">
+          <h3>So sánh nhiều backend</h3>
+          <table id="multiBackendTable">
+            <thead>
+              <tr>
+                <th>Backend</th>
+                <th>Đúng / Có nhãn</th>
+                <th>Accuracy</th>
+                <th>Avg latency</th>
+                <th>Throughput</th>
+                <th>Trạng thái</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td colspan="6">Bấm Predict multi-backend để so sánh.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tableWrap">
+          <table id="resultTable">
+            <thead>
+              <tr>
+                <th>Beat</th>
+                <th>True</th>
+                <th>Pred</th>
+                <th>Correct</th>
+                <th>Confidence</th>
+                <th>Latency</th>
+                <th>Note</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td colspan="7">Chưa có kết quả.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="grid two">
+        <div class="card">
+          <h2>Lý thuyết nhãn</h2>
+          <div id="labelInfo" class="labelInfo"></div>
+        </div>
+
+        <div class="card">
+          <h2>4 kiểu nạp dữ liệu</h2>
+          <div class="pipeline">
+            <div>CSV Heartbeat: 1 file, mỗi dòng là 1 beat.</div>
+            <div>CSV Long ECG: 1 file, tự tìm R-peak và cắt beat.</div>
+            <div>WFDB: chọn .hea, .dat, .atr, .xws theo 4 ô riêng và tự lưu vào Record Library.</div>
+            <div>RTL/Verilog Files: lưu file .v/.sv/.vh cho hướng FPGA RTL. Không dùng để dự đoán CPU và không thay thế .bit/.hwh.</div>
+            <div>Sau khi parse xong mới bắt đầu predict beat hoặc predict dataset.</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/static/app.js?v=56"></script>
+</body>
+</html>

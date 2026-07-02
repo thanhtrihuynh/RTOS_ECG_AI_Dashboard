@@ -1,0 +1,40 @@
+[
+  {
+    "directory": "T:\\SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top",
+    "arguments": [
+      "T:\\SoC\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=T:\\SoC\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=T:\\SoC\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=ecg_fpga_top",
+      "-c",
+      "T:\\SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\src\\ecg_hls_layers.cpp"
+    ],
+    "file": "T:\\SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\src\\ecg_hls_layers.cpp"
+  },
+  {
+    "directory": "T:\\SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top",
+    "arguments": [
+      "T:\\SoC\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=T:\\SoC\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=T:\\SoC\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=ecg_fpga_top",
+      "-c",
+      "T:\\SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\src\\ecg_fpga_top.cpp"
+    ],
+    "file": "T:\\SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\src\\ecg_fpga_top.cpp"
+  },
+  {
+    "directory": "T:\\SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\ecg_fpga_top",
+    "arguments": [
+      "T:\\SoC\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=T:\\SoC\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=T:\\SoC\\2025.2\\Vitis\\include",
+      "-c",
+      "T:\\SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\src\\tb_ecg_fpga_top.cpp"
+    ],
+    "file": "T:\\SoC\\Project\\RTOS\\ecg_hls_vitis_clean_project_v6\\src\\tb_ecg_fpga_top.cpp"
+  }
+]

@@ -1,0 +1,132 @@
+{
+    "system_name": "combined_5class_pair_overlap_NA_refiner",
+    "precision": "float32",
+    "backend": "cpu_float",
+    "main_5class_model": {
+        "file": "main_5class_model_CPU_FLOAT.keras",
+        "input_shape": [
+            320,
+            1
+        ],
+        "output_shape": [
+            5
+        ],
+        "labels": [
+            "N",
+            "L",
+            "R",
+            "V",
+            "A"
+        ],
+        "label_to_id": {
+            "N": 0,
+            "L": 1,
+            "R": 2,
+            "V": 3,
+            "A": 4
+        }
+    },
+    "pair_overlap_NA_refiner": {
+        "file": "pair_overlap_NA_refiner_CPU_FLOAT.keras",
+        "inputs": {
+            "left_beat_input": [
+                320,
+                1
+            ],
+            "right_beat_input": [
+                320,
+                1
+            ],
+            "overlap_region_input": [
+                160,
+                1
+            ],
+            "pair_rr_overlap_features": [
+                15
+            ]
+        },
+        "outputs": {
+            "left_output": "[P_N, P_A]",
+            "right_output": "[P_N, P_A]"
+        },
+        "labels": [
+            "N",
+            "A"
+        ],
+        "label_to_id": {
+            "N": 0,
+            "A": 1
+        }
+    },
+    "feature_config": {
+        "feature_norm_file": "pair_overlap_feature_norm_float32.npz",
+        "feature_cols": [
+            "rr_before_left_samples",
+            "rr_between_samples",
+            "rr_after_right_samples",
+            "rr_before_left_norm",
+            "rr_between_norm",
+            "rr_after_right_norm",
+            "left_prematurity",
+            "right_prematurity",
+            "left_post_pause",
+            "right_post_pause",
+            "left_pause_minus_pre",
+            "right_pause_minus_pre",
+            "median_rr_record",
+            "overlap_width",
+            "overlap_ratio"
+        ],
+        "feature_mean": [
+            352.7770080566406,
+            247.61585998535156,
+            348.8302307128906,
+            1.306945562362671,
+            0.9178949594497681,
+            1.2920535802841187,
+            1.306945562362671,
+            0.9178949594497681,
+            0.9178949594497681,
+            1.2920535802841187,
+            -0.3890429139137268,
+            0.3741532564163208,
+            273.2770080566406,
+            72.38414001464844,
+            0.22620081901550293
+        ],
+        "feature_std": [
+            186.6134033203125,
+            39.76157760620117,
+            187.31686401367188,
+            0.6862762570381165,
+            0.13061007857322693,
+            0.6892594695091248,
+            0.6862762570381165,
+            0.13061007857322693,
+            0.13061007857322693,
+            0.6892594695091248,
+            0.6748709082603455,
+            0.679543673992157,
+            47.10103988647461,
+            39.76157760620117,
+            0.12425451725721359
+        ],
+        "normalize_formula": "feature_norm = (feature_raw - feature_mean) / feature_std"
+    },
+    "thresholds": {
+        "PAIR_LEFT_A_THRESHOLD": 0.845,
+        "PAIR_RIGHT_A_THRESHOLD": 0.735,
+        "PAIR_OVERLAP_THRESHOLD_N": 0.2,
+        "PAIR_OVERLAP_THRESHOLD_A": 0.85
+    },
+    "combine_rule": {
+        "step_1": "D\u00f9ng main_5class_model d\u1ef1 \u0111o\u00e1n N/L/R/V/A.",
+        "step_2": "N\u1ebfu d\u1ef1 \u0111o\u00e1n L/R/V th\u00ec gi\u1eef nguy\u00ean.",
+        "step_3": "N\u1ebfu d\u1ef1 \u0111o\u00e1n N ho\u1eb7c A th\u00ec g\u1ecdi pair_overlap_NA_refiner.",
+        "step_4": "pair_overlap_NA_refiner ch\u1ec9 \u0111\u01b0\u1ee3c s\u1eeda trong ph\u1ea1m vi N <-> A.",
+        "step_5": "N\u1ebfu P_A <= PAIR_OVERLAP_THRESHOLD_N th\u00ec \u00e9p v\u1ec1 N.",
+        "step_6": "N\u1ebfu P_A >= PAIR_OVERLAP_THRESHOLD_A th\u00ec \u00e9p v\u1ec1 A.",
+        "step_7": "N\u1ebfu n\u1eb1m gi\u1eefa hai ng\u01b0\u1ee1ng th\u00ec gi\u1eef k\u1ebft qu\u1ea3 5-class."
+    },
+    "important_note": "Combined system kh\u00f4ng ph\u1ea3i m\u1ed9t model Keras duy nh\u1ea5t. \u0110\u00e2y l\u00e0 pipeline g\u1ed3m 2 model Keras v\u00e0 lu\u1eadt combine b\u00ean ngo\u00e0i."
+}

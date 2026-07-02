@@ -1,0 +1,1826 @@
+{
+  "117": {
+    "record_id": "117",
+    "created_at": "2026-07-02T22:32:22",
+    "updated_at": "2026-07-02T22:32:22",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "117.hea",
+        "stored_filename": "117.hea",
+        "relative_path": "record_library/hea/117.hea",
+        "size_bytes": 122
+      },
+      "dat": {
+        "original_filename": "117.dat",
+        "stored_filename": "117.dat",
+        "relative_path": "record_library/dat/117.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "117.atr",
+        "stored_filename": "117.atr",
+        "relative_path": "record_library/atr/117.atr",
+        "size_bytes": 3090
+      },
+      "xws": {
+        "original_filename": "117.xws",
+        "stored_filename": "117.xws",
+        "relative_path": "record_library/xws/117.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "215": {
+    "record_id": "215",
+    "created_at": "2026-07-02T22:32:22",
+    "updated_at": "2026-07-02T22:32:22",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "215.hea",
+        "stored_filename": "215.hea",
+        "relative_path": "record_library/hea/215.hea",
+        "size_bytes": 249
+      },
+      "dat": {
+        "original_filename": "215.dat",
+        "stored_filename": "215.dat",
+        "relative_path": "record_library/dat/215.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "215.atr",
+        "stored_filename": "215.atr",
+        "relative_path": "record_library/atr/215.atr",
+        "size_bytes": 6878
+      },
+      "xws": {
+        "original_filename": "215.xws",
+        "stored_filename": "215.xws",
+        "relative_path": "record_library/xws/215.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "108": {
+    "record_id": "108",
+    "created_at": "2026-07-02T22:32:22",
+    "updated_at": "2026-07-02T22:32:22",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "108.hea",
+        "stored_filename": "108.hea",
+        "relative_path": "record_library/hea/108.hea",
+        "size_bytes": 303
+      },
+      "dat": {
+        "original_filename": "108.dat",
+        "stored_filename": "108.dat",
+        "relative_path": "record_library/dat/108.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "108.atr",
+        "stored_filename": "108.atr",
+        "relative_path": "record_library/atr/108.atr",
+        "size_bytes": 3742
+      },
+      "xws": {
+        "original_filename": "108.xws",
+        "stored_filename": "108.xws",
+        "relative_path": "record_library/xws/108.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "109": {
+    "record_id": "109",
+    "created_at": "2026-07-02T22:32:22",
+    "updated_at": "2026-07-02T22:32:22",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "109.hea",
+        "stored_filename": "109.hea",
+        "relative_path": "record_library/hea/109.hea",
+        "size_bytes": 189
+      },
+      "dat": {
+        "original_filename": "109.dat",
+        "stored_filename": "109.dat",
+        "relative_path": "record_library/dat/109.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "109.atr",
+        "stored_filename": "109.atr",
+        "relative_path": "record_library/atr/109.atr",
+        "size_bytes": 5080
+      },
+      "xws": {
+        "original_filename": "109.xws",
+        "stored_filename": "109.xws",
+        "relative_path": "record_library/xws/109.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "210": {
+    "record_id": "210",
+    "created_at": "2026-07-02T22:32:22",
+    "updated_at": "2026-07-02T22:32:22",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "210.hea",
+        "stored_filename": "210.hea",
+        "relative_path": "record_library/hea/210.hea",
+        "size_bytes": 152
+      },
+      "dat": {
+        "original_filename": "210.dat",
+        "stored_filename": "210.dat",
+        "relative_path": "record_library/dat/210.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "210.atr",
+        "stored_filename": "210.atr",
+        "relative_path": "record_library/atr/210.atr",
+        "size_bytes": 5824
+      },
+      "xws": {
+        "original_filename": "210.xws",
+        "stored_filename": "210.xws",
+        "relative_path": "record_library/xws/210.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "121": {
+    "record_id": "121",
+    "created_at": "2026-07-02T22:32:22",
+    "updated_at": "2026-07-02T22:32:22",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "121.hea",
+        "stored_filename": "121.hea",
+        "relative_path": "record_library/hea/121.hea",
+        "size_bytes": 145
+      },
+      "dat": {
+        "original_filename": "121.dat",
+        "stored_filename": "121.dat",
+        "relative_path": "record_library/dat/121.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "121.atr",
+        "stored_filename": "121.atr",
+        "relative_path": "record_library/atr/121.atr",
+        "size_bytes": 3774
+      },
+      "xws": {
+        "original_filename": "121.xws",
+        "stored_filename": "121.xws",
+        "relative_path": "record_library/xws/121.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "106": {
+    "record_id": "106",
+    "created_at": "2026-07-02T22:32:22",
+    "updated_at": "2026-07-02T22:32:22",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "106.hea",
+        "stored_filename": "106.hea",
+        "relative_path": "record_library/hea/106.hea",
+        "size_bytes": 152
+      },
+      "dat": {
+        "original_filename": "106.dat",
+        "stored_filename": "106.dat",
+        "relative_path": "record_library/dat/106.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "106.atr",
+        "stored_filename": "106.atr",
+        "relative_path": "record_library/atr/106.atr",
+        "size_bytes": 5476
+      },
+      "xws": {
+        "original_filename": "106.xws",
+        "stored_filename": "106.xws",
+        "relative_path": "record_library/xws/106.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "212": {
+    "record_id": "212",
+    "created_at": "2026-07-02T22:32:22",
+    "updated_at": "2026-07-02T22:32:22",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "212.hea",
+        "stored_filename": "212.hea",
+        "relative_path": "record_library/hea/212.hea",
+        "size_bytes": 241
+      },
+      "dat": {
+        "original_filename": "212.dat",
+        "stored_filename": "212.dat",
+        "relative_path": "record_library/dat/212.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "212.atr",
+        "stored_filename": "212.atr",
+        "relative_path": "record_library/atr/212.atr",
+        "size_bytes": 5550
+      },
+      "xws": {
+        "original_filename": "212.xws",
+        "stored_filename": "212.xws",
+        "relative_path": "record_library/xws/212.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "208": {
+    "record_id": "208",
+    "created_at": "2026-07-02T22:32:23",
+    "updated_at": "2026-07-02T22:32:23",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "208.hea",
+        "stored_filename": "208.hea",
+        "relative_path": "record_library/hea/208.hea",
+        "size_bytes": 300
+      },
+      "dat": {
+        "original_filename": "208.dat",
+        "stored_filename": "208.dat",
+        "relative_path": "record_library/dat/208.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "208.atr",
+        "stored_filename": "208.atr",
+        "relative_path": "record_library/atr/208.atr",
+        "size_bytes": 8578
+      },
+      "xws": {
+        "original_filename": "208.xws",
+        "stored_filename": "208.xws",
+        "relative_path": "record_library/xws/208.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "233": {
+    "record_id": "233",
+    "created_at": "2026-07-02T22:32:23",
+    "updated_at": "2026-07-02T22:32:23",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "233.hea",
+        "stored_filename": "233.hea",
+        "relative_path": "record_library/hea/233.hea",
+        "size_bytes": 156
+      },
+      "dat": {
+        "original_filename": "233.dat",
+        "stored_filename": "233.dat",
+        "relative_path": "record_library/dat/233.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "233.atr",
+        "stored_filename": "233.atr",
+        "relative_path": "record_library/atr/233.atr",
+        "size_bytes": 6770
+      },
+      "xws": {
+        "original_filename": "233.xws",
+        "stored_filename": "233.xws",
+        "relative_path": "record_library/xws/233.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "103": {
+    "record_id": "103",
+    "created_at": "2026-07-02T22:32:23",
+    "updated_at": "2026-07-02T22:32:23",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "103.hea",
+        "stored_filename": "103.hea",
+        "relative_path": "record_library/hea/103.hea",
+        "size_bytes": 137
+      },
+      "dat": {
+        "original_filename": "103.dat",
+        "stored_filename": "103.dat",
+        "relative_path": "record_library/dat/103.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "103.atr",
+        "stored_filename": "103.atr",
+        "relative_path": "record_library/atr/103.atr",
+        "size_bytes": 4196
+      },
+      "xws": {
+        "original_filename": "103.xws",
+        "stored_filename": "103.xws",
+        "relative_path": "record_library/xws/103.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "209": {
+    "record_id": "209",
+    "created_at": "2026-07-02T22:32:23",
+    "updated_at": "2026-07-02T22:32:23",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "209.hea",
+        "stored_filename": "209.hea",
+        "relative_path": "record_library/hea/209.hea",
+        "size_bytes": 152
+      },
+      "dat": {
+        "original_filename": "209.dat",
+        "stored_filename": "209.dat",
+        "relative_path": "record_library/dat/209.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "209.atr",
+        "stored_filename": "209.atr",
+        "relative_path": "record_library/atr/209.atr",
+        "size_bytes": 6288
+      },
+      "xws": {
+        "original_filename": "209.xws",
+        "stored_filename": "209.xws",
+        "relative_path": "record_library/xws/209.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "105": {
+    "record_id": "105",
+    "created_at": "2026-07-02T22:32:23",
+    "updated_at": "2026-07-02T22:32:23",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "105.hea",
+        "stored_filename": "105.hea",
+        "relative_path": "record_library/hea/105.hea",
+        "size_bytes": 251
+      },
+      "dat": {
+        "original_filename": "105.dat",
+        "stored_filename": "105.dat",
+        "relative_path": "record_library/dat/105.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "105.atr",
+        "stored_filename": "105.atr",
+        "relative_path": "record_library/atr/105.atr",
+        "size_bytes": 5638
+      },
+      "xws": {
+        "original_filename": "105.xws",
+        "stored_filename": "105.xws",
+        "relative_path": "record_library/xws/105.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "114": {
+    "record_id": "114",
+    "created_at": "2026-07-02T22:32:23",
+    "updated_at": "2026-07-02T22:32:23",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "114.hea",
+        "stored_filename": "114.hea",
+        "relative_path": "record_library/hea/114.hea",
+        "size_bytes": 154
+      },
+      "dat": {
+        "original_filename": "114.dat",
+        "stored_filename": "114.dat",
+        "relative_path": "record_library/dat/114.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "114.atr",
+        "stored_filename": "114.atr",
+        "relative_path": "record_library/atr/114.atr",
+        "size_bytes": 3878
+      },
+      "xws": {
+        "original_filename": "114.xws",
+        "stored_filename": "114.xws",
+        "relative_path": "record_library/xws/114.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "231": {
+    "record_id": "231",
+    "created_at": "2026-07-02T22:32:23",
+    "updated_at": "2026-07-02T22:32:23",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "231.hea",
+        "stored_filename": "231.hea",
+        "relative_path": "record_library/hea/231.hea",
+        "size_bytes": 325
+      },
+      "dat": {
+        "original_filename": "231.dat",
+        "stored_filename": "231.dat",
+        "relative_path": "record_library/dat/231.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "231.atr",
+        "stored_filename": "231.atr",
+        "relative_path": "record_library/atr/231.atr",
+        "size_bytes": 7516
+      },
+      "xws": {
+        "original_filename": "231.xws",
+        "stored_filename": "231.xws",
+        "relative_path": "record_library/xws/231.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "222": {
+    "record_id": "222",
+    "created_at": "2026-07-02T22:32:23",
+    "updated_at": "2026-07-02T22:32:23",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "222.hea",
+        "stored_filename": "222.hea",
+        "relative_path": "record_library/hea/222.hea",
+        "size_bytes": 325
+      },
+      "dat": {
+        "original_filename": "222.dat",
+        "stored_filename": "222.dat",
+        "relative_path": "record_library/dat/222.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "222.atr",
+        "stored_filename": "222.atr",
+        "relative_path": "record_library/atr/222.atr",
+        "size_bytes": 6230
+      },
+      "xws": {
+        "original_filename": "222.xws",
+        "stored_filename": "222.xws",
+        "relative_path": "record_library/xws/222.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "220": {
+    "record_id": "220",
+    "created_at": "2026-07-02T22:32:23",
+    "updated_at": "2026-07-02T22:32:23",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "220.hea",
+        "stored_filename": "220.hea",
+        "relative_path": "record_library/hea/220.hea",
+        "size_bytes": 127
+      },
+      "dat": {
+        "original_filename": "220.dat",
+        "stored_filename": "220.dat",
+        "relative_path": "record_library/dat/220.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "220.atr",
+        "stored_filename": "220.atr",
+        "relative_path": "record_library/atr/220.atr",
+        "size_bytes": 4262
+      },
+      "xws": {
+        "original_filename": "220.xws",
+        "stored_filename": "220.xws",
+        "relative_path": "record_library/xws/220.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "122": {
+    "record_id": "122",
+    "created_at": "2026-07-02T22:32:23",
+    "updated_at": "2026-07-02T22:32:23",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "122.hea",
+        "stored_filename": "122.hea",
+        "relative_path": "record_library/hea/122.hea",
+        "size_bytes": 215
+      },
+      "dat": {
+        "original_filename": "122.dat",
+        "stored_filename": "122.dat",
+        "relative_path": "record_library/dat/122.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "122.atr",
+        "stored_filename": "122.atr",
+        "relative_path": "record_library/atr/122.atr",
+        "size_bytes": 4970
+      },
+      "xws": {
+        "original_filename": "122.xws",
+        "stored_filename": "122.xws",
+        "relative_path": "record_library/xws/122.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "230": {
+    "record_id": "230",
+    "created_at": "2026-07-02T22:32:23",
+    "updated_at": "2026-07-02T22:32:23",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "230.hea",
+        "stored_filename": "230.hea",
+        "relative_path": "record_library/hea/230.hea",
+        "size_bytes": 128
+      },
+      "dat": {
+        "original_filename": "230.dat",
+        "stored_filename": "230.dat",
+        "relative_path": "record_library/dat/230.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "230.atr",
+        "stored_filename": "230.atr",
+        "relative_path": "record_library/atr/230.atr",
+        "size_bytes": 6386
+      },
+      "xws": {
+        "original_filename": "230.xws",
+        "stored_filename": "230.xws",
+        "relative_path": "record_library/xws/230.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "101": {
+    "record_id": "101",
+    "created_at": "2026-07-02T22:32:23",
+    "updated_at": "2026-07-02T22:32:23",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "101.hea",
+        "stored_filename": "101.hea",
+        "relative_path": "record_library/hea/101.hea",
+        "size_bytes": 126
+      },
+      "dat": {
+        "original_filename": "101.dat",
+        "stored_filename": "101.dat",
+        "relative_path": "record_library/dat/101.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "101.atr",
+        "stored_filename": "101.atr",
+        "relative_path": "record_library/atr/101.atr",
+        "size_bytes": 3768
+      },
+      "xws": {
+        "original_filename": "101.xws",
+        "stored_filename": "101.xws",
+        "relative_path": "record_library/xws/101.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "228": {
+    "record_id": "228",
+    "created_at": "2026-07-02T22:32:23",
+    "updated_at": "2026-07-02T22:32:23",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "228.hea",
+        "stored_filename": "228.hea",
+        "relative_path": "record_library/hea/228.hea",
+        "size_bytes": 294
+      },
+      "dat": {
+        "original_filename": "228.dat",
+        "stored_filename": "228.dat",
+        "relative_path": "record_library/dat/228.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "228.atr",
+        "stored_filename": "228.atr",
+        "relative_path": "record_library/atr/228.atr",
+        "size_bytes": 5198
+      },
+      "xws": {
+        "original_filename": "228.xws",
+        "stored_filename": "228.xws",
+        "relative_path": "record_library/xws/228.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "123": {
+    "record_id": "123",
+    "created_at": "2026-07-02T22:32:24",
+    "updated_at": "2026-07-02T22:32:24",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "123.hea",
+        "stored_filename": "123.hea",
+        "relative_path": "record_library/hea/123.hea",
+        "size_bytes": 177
+      },
+      "dat": {
+        "original_filename": "123.dat",
+        "stored_filename": "123.dat",
+        "relative_path": "record_library/dat/123.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "123.atr",
+        "stored_filename": "123.atr",
+        "relative_path": "record_library/atr/123.atr",
+        "size_bytes": 3046
+      },
+      "xws": {
+        "original_filename": "123.xws",
+        "stored_filename": "123.xws",
+        "relative_path": "record_library/xws/123.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "202": {
+    "record_id": "202",
+    "created_at": "2026-07-02T22:32:24",
+    "updated_at": "2026-07-02T22:32:24",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "202.hea",
+        "stored_filename": "202.hea",
+        "relative_path": "record_library/hea/202.hea",
+        "size_bytes": 270
+      },
+      "dat": {
+        "original_filename": "202.dat",
+        "stored_filename": "202.dat",
+        "relative_path": "record_library/dat/202.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "202.atr",
+        "stored_filename": "202.atr",
+        "relative_path": "record_library/atr/202.atr",
+        "size_bytes": 4388
+      },
+      "xws": {
+        "original_filename": "202.xws",
+        "stored_filename": "202.xws",
+        "relative_path": "record_library/xws/202.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "201": {
+    "record_id": "201",
+    "created_at": "2026-07-02T22:32:24",
+    "updated_at": "2026-07-02T22:32:24",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "201.hea",
+        "stored_filename": "201.hea",
+        "relative_path": "record_library/hea/201.hea",
+        "size_bytes": 277
+      },
+      "dat": {
+        "original_filename": "201.dat",
+        "stored_filename": "201.dat",
+        "relative_path": "record_library/dat/201.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "201.atr",
+        "stored_filename": "201.atr",
+        "relative_path": "record_library/atr/201.atr",
+        "size_bytes": 4322
+      },
+      "xws": {
+        "original_filename": "201.xws",
+        "stored_filename": "201.xws",
+        "relative_path": "record_library/xws/201.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "118": {
+    "record_id": "118",
+    "created_at": "2026-07-02T22:32:24",
+    "updated_at": "2026-07-02T22:32:24",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "118.hea",
+        "stored_filename": "118.hea",
+        "relative_path": "record_library/hea/118.hea",
+        "size_bytes": 161
+      },
+      "dat": {
+        "original_filename": "118.dat",
+        "stored_filename": "118.dat",
+        "relative_path": "record_library/dat/118.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "118.atr",
+        "stored_filename": "118.atr",
+        "relative_path": "record_library/atr/118.atr",
+        "size_bytes": 4622
+      },
+      "xws": {
+        "original_filename": "118.xws",
+        "stored_filename": "118.xws",
+        "relative_path": "record_library/xws/118.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "124": {
+    "record_id": "124",
+    "created_at": "2026-07-02T22:32:24",
+    "updated_at": "2026-07-02T22:32:24",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "124.hea",
+        "stored_filename": "124.hea",
+        "relative_path": "record_library/hea/124.hea",
+        "size_bytes": 213
+      },
+      "dat": {
+        "original_filename": "124.dat",
+        "stored_filename": "124.dat",
+        "relative_path": "record_library/dat/124.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "124.atr",
+        "stored_filename": "124.atr",
+        "relative_path": "record_library/atr/124.atr",
+        "size_bytes": 3360
+      },
+      "xws": {
+        "original_filename": "124.xws",
+        "stored_filename": "124.xws",
+        "relative_path": "record_library/xws/124.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "111": {
+    "record_id": "111",
+    "created_at": "2026-07-02T22:32:24",
+    "updated_at": "2026-07-02T22:32:24",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "111.hea",
+        "stored_filename": "111.hea",
+        "relative_path": "record_library/hea/111.hea",
+        "size_bytes": 278
+      },
+      "dat": {
+        "original_filename": "111.dat",
+        "stored_filename": "111.dat",
+        "relative_path": "record_library/dat/111.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "111.atr",
+        "stored_filename": "111.atr",
+        "relative_path": "record_library/atr/111.atr",
+        "size_bytes": 4284
+      },
+      "xws": {
+        "original_filename": "111.xws",
+        "stored_filename": "111.xws",
+        "relative_path": "record_library/xws/111.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "205": {
+    "record_id": "205",
+    "created_at": "2026-07-02T22:32:24",
+    "updated_at": "2026-07-02T22:32:24",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "205.hea",
+        "stored_filename": "205.hea",
+        "relative_path": "record_library/hea/205.hea",
+        "size_bytes": 216
+      },
+      "dat": {
+        "original_filename": "205.dat",
+        "stored_filename": "205.dat",
+        "relative_path": "record_library/dat/205.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "205.atr",
+        "stored_filename": "205.atr",
+        "relative_path": "record_library/atr/205.atr",
+        "size_bytes": 5436
+      },
+      "xws": {
+        "original_filename": "205.xws",
+        "stored_filename": "205.xws",
+        "relative_path": "record_library/xws/205.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "214": {
+    "record_id": "214",
+    "created_at": "2026-07-02T22:32:24",
+    "updated_at": "2026-07-02T22:32:24",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "214.hea",
+        "stored_filename": "214.hea",
+        "relative_path": "record_library/hea/214.hea",
+        "size_bytes": 263
+      },
+      "dat": {
+        "original_filename": "214.dat",
+        "stored_filename": "214.dat",
+        "relative_path": "record_library/dat/214.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "214.atr",
+        "stored_filename": "214.atr",
+        "relative_path": "record_library/atr/214.atr",
+        "size_bytes": 4790
+      },
+      "xws": {
+        "original_filename": "214.xws",
+        "stored_filename": "214.xws",
+        "relative_path": "record_library/xws/214.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "221": {
+    "record_id": "221",
+    "created_at": "2026-07-02T22:32:24",
+    "updated_at": "2026-07-02T22:32:24",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "221.hea",
+        "stored_filename": "221.hea",
+        "relative_path": "record_library/hea/221.hea",
+        "size_bytes": 222
+      },
+      "dat": {
+        "original_filename": "221.dat",
+        "stored_filename": "221.dat",
+        "relative_path": "record_library/dat/221.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "221.atr",
+        "stored_filename": "221.atr",
+        "relative_path": "record_library/atr/221.atr",
+        "size_bytes": 5874
+      },
+      "xws": {
+        "original_filename": "221.xws",
+        "stored_filename": "221.xws",
+        "relative_path": "record_library/xws/221.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "116": {
+    "record_id": "116",
+    "created_at": "2026-07-02T22:32:24",
+    "updated_at": "2026-07-02T22:32:24",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "116.hea",
+        "stored_filename": "116.hea",
+        "relative_path": "record_library/hea/116.hea",
+        "size_bytes": 152
+      },
+      "dat": {
+        "original_filename": "116.dat",
+        "stored_filename": "116.dat",
+        "relative_path": "record_library/dat/116.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "116.atr",
+        "stored_filename": "116.atr",
+        "relative_path": "record_library/atr/116.atr",
+        "size_bytes": 4858
+      },
+      "xws": {
+        "original_filename": "116.xws",
+        "stored_filename": "116.xws",
+        "relative_path": "record_library/xws/116.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "219": {
+    "record_id": "219",
+    "created_at": "2026-07-02T22:32:24",
+    "updated_at": "2026-07-02T22:32:24",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "219.hea",
+        "stored_filename": "219.hea",
+        "relative_path": "record_library/hea/219.hea",
+        "size_bytes": 269
+      },
+      "dat": {
+        "original_filename": "219.dat",
+        "stored_filename": "219.dat",
+        "relative_path": "record_library/dat/219.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "219.atr",
+        "stored_filename": "219.atr",
+        "relative_path": "record_library/atr/219.atr",
+        "size_bytes": 4798
+      },
+      "xws": {
+        "original_filename": "219.xws",
+        "stored_filename": "219.xws",
+        "relative_path": "record_library/xws/219.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "223": {
+    "record_id": "223",
+    "created_at": "2026-07-02T22:32:24",
+    "updated_at": "2026-07-02T22:32:24",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "223.hea",
+        "stored_filename": "223.hea",
+        "relative_path": "record_library/hea/223.hea",
+        "size_bytes": 251
+      },
+      "dat": {
+        "original_filename": "223.dat",
+        "stored_filename": "223.dat",
+        "relative_path": "record_library/dat/223.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "223.atr",
+        "stored_filename": "223.atr",
+        "relative_path": "record_library/atr/223.atr",
+        "size_bytes": 5468
+      },
+      "xws": {
+        "original_filename": "223.xws",
+        "stored_filename": "223.xws",
+        "relative_path": "record_library/xws/223.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "203": {
+    "record_id": "203",
+    "created_at": "2026-07-02T22:32:25",
+    "updated_at": "2026-07-02T22:32:25",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "203.hea",
+        "stored_filename": "203.hea",
+        "relative_path": "record_library/hea/203.hea",
+        "size_bytes": 414
+      },
+      "dat": {
+        "original_filename": "203.dat",
+        "stored_filename": "203.dat",
+        "relative_path": "record_library/dat/203.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "203.atr",
+        "stored_filename": "203.atr",
+        "relative_path": "record_library/atr/203.atr",
+        "size_bytes": 7094
+      },
+      "xws": {
+        "original_filename": "203.xws",
+        "stored_filename": "203.xws",
+        "relative_path": "record_library/xws/203.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "207": {
+    "record_id": "207",
+    "created_at": "2026-07-02T22:32:25",
+    "updated_at": "2026-07-02T22:32:25",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "207.hea",
+        "stored_filename": "207.hea",
+        "relative_path": "record_library/hea/207.hea",
+        "size_bytes": 535
+      },
+      "dat": {
+        "original_filename": "207.dat",
+        "stored_filename": "207.dat",
+        "relative_path": "record_library/dat/207.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "207.atr",
+        "stored_filename": "207.atr",
+        "relative_path": "record_library/atr/207.atr",
+        "size_bytes": 4958
+      },
+      "xws": {
+        "original_filename": "207.xws",
+        "stored_filename": "207.xws",
+        "relative_path": "record_library/xws/207.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "113": {
+    "record_id": "113",
+    "created_at": "2026-07-02T22:32:25",
+    "updated_at": "2026-07-02T22:32:25",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "113.hea",
+        "stored_filename": "113.hea",
+        "relative_path": "record_library/hea/113.hea",
+        "size_bytes": 228
+      },
+      "dat": {
+        "original_filename": "113.dat",
+        "stored_filename": "113.dat",
+        "relative_path": "record_library/dat/113.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "113.atr",
+        "stored_filename": "113.atr",
+        "relative_path": "record_library/atr/113.atr",
+        "size_bytes": 3600
+      },
+      "xws": {
+        "original_filename": "113.xws",
+        "stored_filename": "113.xws",
+        "relative_path": "record_library/xws/113.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "112": {
+    "record_id": "112",
+    "created_at": "2026-07-02T22:32:25",
+    "updated_at": "2026-07-02T22:32:25",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "112.hea",
+        "stored_filename": "112.hea",
+        "relative_path": "record_library/hea/112.hea",
+        "size_bytes": 192
+      },
+      "dat": {
+        "original_filename": "112.dat",
+        "stored_filename": "112.dat",
+        "relative_path": "record_library/dat/112.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "112.atr",
+        "stored_filename": "112.atr",
+        "relative_path": "record_library/atr/112.atr",
+        "size_bytes": 5118
+      },
+      "xws": {
+        "original_filename": "112.xws",
+        "stored_filename": "112.xws",
+        "relative_path": "record_library/xws/112.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "234": {
+    "record_id": "234",
+    "created_at": "2026-07-02T22:32:25",
+    "updated_at": "2026-07-02T22:32:25",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "234.hea",
+        "stored_filename": "234.hea",
+        "relative_path": "record_library/hea/234.hea",
+        "size_bytes": 150
+      },
+      "dat": {
+        "original_filename": "234.dat",
+        "stored_filename": "234.dat",
+        "relative_path": "record_library/dat/234.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "234.atr",
+        "stored_filename": "234.atr",
+        "relative_path": "record_library/atr/234.atr",
+        "size_bytes": 5560
+      },
+      "xws": {
+        "original_filename": "234.xws",
+        "stored_filename": "234.xws",
+        "relative_path": "record_library/xws/234.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "104": {
+    "record_id": "104",
+    "created_at": "2026-07-02T22:32:25",
+    "updated_at": "2026-07-02T22:32:25",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "104.hea",
+        "stored_filename": "104.hea",
+        "relative_path": "record_library/hea/104.hea",
+        "size_bytes": 370
+      },
+      "dat": {
+        "original_filename": "104.dat",
+        "stored_filename": "104.dat",
+        "relative_path": "record_library/dat/104.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "104.atr",
+        "stored_filename": "104.atr",
+        "relative_path": "record_library/atr/104.atr",
+        "size_bytes": 4948
+      },
+      "xws": {
+        "original_filename": "104.xws",
+        "stored_filename": "104.xws",
+        "relative_path": "record_library/xws/104.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "213": {
+    "record_id": "213",
+    "created_at": "2026-07-02T22:32:25",
+    "updated_at": "2026-07-02T22:32:25",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "213.hea",
+        "stored_filename": "213.hea",
+        "relative_path": "record_library/hea/213.hea",
+        "size_bytes": 319
+      },
+      "dat": {
+        "original_filename": "213.dat",
+        "stored_filename": "213.dat",
+        "relative_path": "record_library/dat/213.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "213.atr",
+        "stored_filename": "213.atr",
+        "relative_path": "record_library/atr/213.atr",
+        "size_bytes": 6852
+      },
+      "xws": {
+        "original_filename": "213.xws",
+        "stored_filename": "213.xws",
+        "relative_path": "record_library/xws/213.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "200": {
+    "record_id": "200",
+    "created_at": "2026-07-02T22:32:25",
+    "updated_at": "2026-07-02T22:32:25",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "200.hea",
+        "stored_filename": "200.hea",
+        "relative_path": "record_library/hea/200.hea",
+        "size_bytes": 298
+      },
+      "dat": {
+        "original_filename": "200.dat",
+        "stored_filename": "200.dat",
+        "relative_path": "record_library/dat/200.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "200.atr",
+        "stored_filename": "200.atr",
+        "relative_path": "record_library/atr/200.atr",
+        "size_bytes": 8114
+      },
+      "xws": {
+        "original_filename": "200.xws",
+        "stored_filename": "200.xws",
+        "relative_path": "record_library/xws/200.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "119": {
+    "record_id": "119",
+    "created_at": "2026-07-02T22:32:25",
+    "updated_at": "2026-07-02T22:32:25",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "119.hea",
+        "stored_filename": "119.hea",
+        "relative_path": "record_library/hea/119.hea",
+        "size_bytes": 152
+      },
+      "dat": {
+        "original_filename": "119.dat",
+        "stored_filename": "119.dat",
+        "relative_path": "record_library/dat/119.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "119.atr",
+        "stored_filename": "119.atr",
+        "relative_path": "record_library/atr/119.atr",
+        "size_bytes": 4812
+      },
+      "xws": {
+        "original_filename": "119.xws",
+        "stored_filename": "119.xws",
+        "relative_path": "record_library/xws/119.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "232": {
+    "record_id": "232",
+    "created_at": "2026-07-02T22:32:25",
+    "updated_at": "2026-07-02T22:32:25",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "232.hea",
+        "stored_filename": "232.hea",
+        "relative_path": "record_library/hea/232.hea",
+        "size_bytes": 380
+      },
+      "dat": {
+        "original_filename": "232.dat",
+        "stored_filename": "232.dat",
+        "relative_path": "record_library/dat/232.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "232.atr",
+        "stored_filename": "232.atr",
+        "relative_path": "record_library/atr/232.atr",
+        "size_bytes": 3914
+      },
+      "xws": {
+        "original_filename": "232.xws",
+        "stored_filename": "232.xws",
+        "relative_path": "record_library/xws/232.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "100": {
+    "record_id": "100",
+    "created_at": "2026-07-02T22:32:25",
+    "updated_at": "2026-07-02T22:32:25",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "100.hea",
+        "stored_filename": "100.hea",
+        "relative_path": "record_library/hea/100.hea",
+        "size_bytes": 138
+      },
+      "dat": {
+        "original_filename": "100.dat",
+        "stored_filename": "100.dat",
+        "relative_path": "record_library/dat/100.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "100.atr",
+        "stored_filename": "100.atr",
+        "relative_path": "record_library/atr/100.atr",
+        "size_bytes": 4558
+      },
+      "xws": {
+        "original_filename": "100.xws",
+        "stored_filename": "100.xws",
+        "relative_path": "record_library/xws/100.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "115": {
+    "record_id": "115",
+    "created_at": "2026-07-02T22:32:26",
+    "updated_at": "2026-07-02T22:32:26",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "115.hea",
+        "stored_filename": "115.hea",
+        "relative_path": "record_library/hea/115.hea",
+        "size_bytes": 121
+      },
+      "dat": {
+        "original_filename": "115.dat",
+        "stored_filename": "115.dat",
+        "relative_path": "record_library/dat/115.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "115.atr",
+        "stored_filename": "115.atr",
+        "relative_path": "record_library/atr/115.atr",
+        "size_bytes": 3946
+      },
+      "xws": {
+        "original_filename": "115.xws",
+        "stored_filename": "115.xws",
+        "relative_path": "record_library/xws/115.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "107": {
+    "record_id": "107",
+    "created_at": "2026-07-02T22:32:26",
+    "updated_at": "2026-07-02T22:32:26",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "107.hea",
+        "stored_filename": "107.hea",
+        "relative_path": "record_library/hea/107.hea",
+        "size_bytes": 187
+      },
+      "dat": {
+        "original_filename": "107.dat",
+        "stored_filename": "107.dat",
+        "relative_path": "record_library/dat/107.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "107.atr",
+        "stored_filename": "107.atr",
+        "relative_path": "record_library/atr/107.atr",
+        "size_bytes": 4406
+      },
+      "xws": {
+        "original_filename": "107.xws",
+        "stored_filename": "107.xws",
+        "relative_path": "record_library/xws/107.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "217": {
+    "record_id": "217",
+    "created_at": "2026-07-02T22:32:26",
+    "updated_at": "2026-07-02T22:32:26",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "217.hea",
+        "stored_filename": "217.hea",
+        "relative_path": "record_library/hea/217.hea",
+        "size_bytes": 172
+      },
+      "dat": {
+        "original_filename": "217.dat",
+        "stored_filename": "217.dat",
+        "relative_path": "record_library/dat/217.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "217.atr",
+        "stored_filename": "217.atr",
+        "relative_path": "record_library/atr/217.atr",
+        "size_bytes": 5262
+      },
+      "xws": {
+        "original_filename": "217.xws",
+        "stored_filename": "217.xws",
+        "relative_path": "record_library/xws/217.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  },
+  "102": {
+    "record_id": "102",
+    "created_at": "2026-07-02T22:32:26",
+    "updated_at": "2026-07-02T22:32:26",
+    "source": "wfdb",
+    "files": {
+      "hea": {
+        "original_filename": "102.hea",
+        "stored_filename": "102.hea",
+        "relative_path": "record_library/hea/102.hea",
+        "size_bytes": 198
+      },
+      "dat": {
+        "original_filename": "102.dat",
+        "stored_filename": "102.dat",
+        "relative_path": "record_library/dat/102.dat",
+        "size_bytes": 1950000
+      },
+      "atr": {
+        "original_filename": "102.atr",
+        "stored_filename": "102.atr",
+        "relative_path": "record_library/atr/102.atr",
+        "size_bytes": 4424
+      },
+      "xws": {
+        "original_filename": "102.xws",
+        "stored_filename": "102.xws",
+        "relative_path": "record_library/xws/102.xws",
+        "size_bytes": 88
+      }
+    },
+    "file_types": [
+      "atr",
+      "dat",
+      "hea",
+      "xws"
+    ]
+  }
+}

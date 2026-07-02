@@ -1,0 +1,4 @@
+CPU Q4.12 package
+
+Dashboard V54 dùng các file .npz/trọng số Q4.12 trong thư mục weights/ để chạy CPU Q4.12.
+Các file .keras SIM không được dùng làm backend CPU Q4.12.

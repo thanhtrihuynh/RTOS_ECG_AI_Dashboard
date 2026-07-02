@@ -1,0 +1,15 @@
+{
+  "design": "NA pair-overlap RTL",
+  "device": "PYNQ-Z2 / XC7Z020",
+  "clock_mhz": 100,
+  "clock_period_ns": 10.0,
+  "latency_cycles": null,
+  "ii": null,
+  "resources": {
+    "LUT":  {"used": null, "available": 53200},
+    "FF":   {"used": null, "available": 106400},
+    "BRAM": {"used": null, "available": 140},
+    "DSP":  {"used": null, "available": 220},
+    "URAM": {"used": 0, "available": 0}
+  }
+}

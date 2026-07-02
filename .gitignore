@@ -1,0 +1,45 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.ipynb_checkpoints/
+
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Vivado generated files
+.Xil/
+*.jou
+*.log
+*.str
+*.backup.jou
+*.backup.log
+
+ecg_hls_vivado/**/.Xil/
+ecg_hls_vivado/**/*.cache/
+ecg_hls_vivado/**/*.gen/
+ecg_hls_vivado/**/*.hw/
+ecg_hls_vivado/**/*.ip_user_files/
+ecg_hls_vivado/**/*.runs/
+ecg_hls_vivado/**/*.sim/
+
+# Vitis HLS generated files
+ecg_hls_vitis/**/.autopilot/
+ecg_hls_vitis/**/solution*/.autopilot/
+ecg_hls_vitis/**/solution*/csim/
+ecg_hls_vitis/**/solution*/syn/
+ecg_hls_vitis/**/solution*/sim/
+ecg_hls_vitis/**/solution*/impl/
+
+# Common large/temp files
+*.zip
+*.rar
+*.7z
+*.tmp
